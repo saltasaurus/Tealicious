@@ -22,6 +22,8 @@ public class Tealicious {
         Fluids.REGISTRY.register(modEventBus);
         FluidTypes.REGISTRY.register(modEventBus);
         CreativeModeTabs.REGISTRY.register(modEventBus);
+        Teas.REGISTRY.register(modEventBus);
+        MobEffects.REGISTRY.register(modEventBus);
 
         if (dist == Dist.CLIENT) {
             modEventBus.addListener(ClientExtensions::registerClientItemExtensions);
