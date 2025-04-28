@@ -51,5 +51,11 @@ public class Tealicious {
                 net.minecraft.world.item.Items.TNT,
                 Teas.T_N_TEA
         );
+
+        builder.addMix(
+                Potions.WATER,
+                net.minecraft.world.item.Items.OXEYE_DAISY,
+                Teas.CHAMOMILE
+        );
     }
 }
