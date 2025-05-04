@@ -1,20 +1,13 @@
 package com.tealicious.effect;
 
-import com.tealicious.MobEffects;
-import com.tealicious.Tealicious;
 import net.minecraft.core.Holder;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.effect.InstantenousMobEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
-
-import javax.annotation.Nullable;
 
 public class TNTeaEffect extends MobEffect {
     public TNTeaEffect() {
