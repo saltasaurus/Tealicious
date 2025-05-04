@@ -1,7 +1,7 @@
 package com.tealicious;
 
 import com.tealicious.client.ClientExtensions;
-import com.tealicious.effect.MobEffects;
+import com.tealicious.effect.TealiciousEffects;
 import com.tealicious.effect.TNTeaEffect;
 import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
@@ -29,7 +29,7 @@ public class Tealicious {
         Fluids.REGISTRY.register(modEventBus);
         FluidTypes.REGISTRY.register(modEventBus);
         CreativeModeTabs.REGISTRY.register(modEventBus);
-        MobEffects.REGISTRY.register(modEventBus);
+        TealiciousEffects.EFFECTS.register(modEventBus);
         Teas.REGISTRY.register(modEventBus);
 
 

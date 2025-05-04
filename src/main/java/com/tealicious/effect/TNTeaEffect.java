@@ -23,7 +23,7 @@ public class TNTeaEffect extends MobEffect {
     public static void onEffectExpired(MobEffectEvent.Expired event) {
         LivingEntity entity = event.getEntity();
         Holder<MobEffect> effect = event.getEffectInstance().getEffect();
-        if (effect.is(MobEffects.EXPLOSION)) {
+        if (effect.is(TealiciousEffects.EXPLOSION)) {
             entity.level().explode(
                     null,
                     entity.level().damageSources().explosion(null),

@@ -1,6 +1,6 @@
 package com.tealicious;
 
-import com.tealicious.effect.MobEffects;
+import com.tealicious.effect.TealiciousEffects;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -14,12 +14,12 @@ public class Teas {
             "t_n_tea",
             () -> new Potion(
                     "t_n_tea",
-                    new MobEffectInstance(MobEffects.EXPLOSION, 80)));
+                    new MobEffectInstance(TealiciousEffects.EXPLOSION, 80)));
 
     public static final Holder<Potion> CHAMOMILE = REGISTRY.register(
             "chamomile",
             () -> new Potion(
                     "chamomile",
                     // Duration in ticks (20 ticks/s)
-                    new MobEffectInstance(MobEffects.SLEEPY, 1200)));
+                    new MobEffectInstance(TealiciousEffects.SLEEPY, 1200)));
 }
