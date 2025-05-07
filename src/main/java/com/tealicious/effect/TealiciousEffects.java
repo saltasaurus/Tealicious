@@ -8,6 +8,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.w3c.dom.Attr;
 
 public class TealiciousEffects {
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, Tealicious.MODID);
@@ -18,11 +19,6 @@ public class TealiciousEffects {
         .addAttributeModifier(
             Attributes.MOVEMENT_SPEED,
             ResourceLocation.fromNamespaceAndPath(Tealicious.MODID, "effect.sleepy.slowness"),
-            -0.2,
-            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
-        .addAttributeModifier(
-            Attributes.ATTACK_SPEED,
-            ResourceLocation.fromNamespaceAndPath(Tealicious.MODID, "effect.sleepy.attack_fatigue"),
-            -0.5,
-            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        -0.15,
+            AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 }
