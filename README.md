@@ -1,3 +1,19 @@
+# Tealicious
+
+A mod all about teas
+
+## What does this mod do?
+
+This mod adds a bunch of teas that cause many different effects.
+These effects can affect the player, enemies, or even the world!
+
+There are many teas with their own special flavors. Gain regeneration, flight, or even control the weather!
+
+Be warned though, not all are safe. Our signature TNTea haunts friends and foes alike!
+
+If you are ready to add new flavors to your Minecraft,
+download this mod, jump in game, and brew to your hearts desire!
+
 
 Installation information
 =======
