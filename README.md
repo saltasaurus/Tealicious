@@ -4,8 +4,8 @@ A mod all about teas
 
 ## What does this mod do?
 
-This mod adds a bunch of teas that cause many different effects.
-These effects can affect the player, enemies, or even the world!
+This mod adds a bunch of teas that cause many different com.tealicious.effect.
+These com.tealicious.effect can affect the player, enemies, or even the world!
 
 There are many teas with their own special flavors. Gain regeneration, flight, or even control the weather!
 
