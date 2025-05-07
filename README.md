@@ -15,6 +15,41 @@ If you are ready to add new flavors to your Minecraft,
 download this mod, jump in game, and brew to your hearts desire!
 
 
+## Directory structure
+Tealicious/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com.tealicious/
+│   │   │       ├── Tealicious.java
+│   │   │       ├── capability/
+│   │   │       │   ├── ITeaEffects.java
+│   │   │       │   ├── TeaEffectsCapability.java
+│   │   │       │   └── TeaCapabilities.java
+│   │   │       ├── effect/
+│   │   │       │   ├── ModEffects.java
+│   │   │       │   └── SleepinessEffect.java
+│   │   │       ├── event/
+│   │   │       │   └── TeaEventHandlers.java
+│   │   │       └── item/
+│   │   │           ├── ModItems.java
+│   │   │           └── ChamomileTeaItem.java
+│   │   └── resources/
+│   │       ├── META-INF/
+│   │       │   └── mods.toml
+│   │       └── assets/
+│   │           └── tealicious/
+│   │               ├── lang/
+│   │               │   └── en_us.json
+│   │               ├── models/
+│   │               │   └── item/
+│   │               │       └── chamomile_tea.json
+│   │               └── textures/
+│   │                   └── item/
+│   │                       └── chamomile_tea.png
+│   └── generated/
+└── build.gradle
+
 Installation information
 =======
 
