@@ -15,5 +15,6 @@ public class CreativeModeTabs {
             .icon(() -> Items.HOT_WATER_BUCKET.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(Items.HOT_WATER_BUCKET.get());
+                output.accept(Items.BASIC_TEA.get());
             }).build());
 }
