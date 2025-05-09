@@ -24,6 +24,7 @@ public class TNTeaEffect extends MobEffect {
     @Override
     public void onEffectAdded(LivingEntity entity, int amplifier) {
         super.onEffectAdded(entity, amplifier);
+
         entity.level().playSound(null, entity.blockPosition(), SoundEvents.TNT_PRIMED, SoundSource.BLOCKS, 0.5F, 1.0F);
     }
 

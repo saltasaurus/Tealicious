@@ -15,7 +15,7 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 import org.joml.Vector4f;
 
 public class ClientExtensions {
-    public static final IClientFluidTypeExtensions ACID_FLUID = new IClientFluidTypeExtensions() {
+    public static final IClientFluidTypeExtensions HOT_WATER_FLUID = new IClientFluidTypeExtensions() {
         @Override
         public ResourceLocation getStillTexture() {
             return ResourceLocation.withDefaultNamespace("block/water_still");
@@ -58,6 +58,6 @@ public class ClientExtensions {
     };
 
     public static void registerClientItemExtensions(RegisterClientExtensionsEvent event) {
-        event.registerFluidType(ACID_FLUID, FluidTypes.HOT_WATER_FLUID_TYPE.get());
+        event.registerFluidType(HOT_WATER_FLUID, FluidTypes.HOT_WATER_FLUID_TYPE.get());
     }
 }

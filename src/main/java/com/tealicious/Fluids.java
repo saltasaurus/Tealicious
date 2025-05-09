@@ -1,6 +1,9 @@
 package com.tealicious;
 
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.consume_effects.ConsumeEffect;
+import net.minecraft.world.level.block.Portal;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredHolder;
