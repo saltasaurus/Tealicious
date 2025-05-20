@@ -24,7 +24,7 @@ public class Items {
 
 
     public static final DeferredItem<Item> BASIC_TEA = REGISTRY.register(
-            "basic_tea",
+            "tea",
             (key) -> new TeaItem(
                     new Item.Properties()
                             .setId(ResourceKey.create(Registries.ITEM, key))

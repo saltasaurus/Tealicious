@@ -1,5 +1,6 @@
 package com.tealicious.item;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -49,6 +50,11 @@ public class TeaItem extends Item {
 
         if (entity instanceof Player player && !player.getAbilities().instabuild) {
             stack.shrink(1);
+
+
+//            source.getServer().overworld().setWeatherParameters(getDuration(source, time, ServerLevel.RAIN_DELAY), 0, false, false);
+
+//            level.getServer().overworld().resetWeatherCycle();
 
 //            player.die(player.damageSources().cactus());
 //            player.hurt(player.damageSources().cactus(), 1000);
