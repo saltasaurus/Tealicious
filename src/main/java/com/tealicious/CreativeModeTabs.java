@@ -16,5 +16,6 @@ public class CreativeModeTabs {
             .displayItems((parameters, output) -> {
                 output.accept(Items.HOT_WATER_BUCKET.get());
                 output.accept(Items.BASIC_TEA.get());
+                output.accept(Items.BLOOM_TEA.get());
             }).build());
 }

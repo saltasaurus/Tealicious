@@ -1,6 +1,7 @@
 package com.tealicious;
 
 import com.tealicious.effect.TNTeaEffect;
+import com.tealicious.effect.BloomEffect;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffect;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -10,4 +11,5 @@ public class MobEffects {
     public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, Tealicious.MODID);
 
     public static final DeferredHolder<MobEffect, MobEffect> EXPLOSION = REGISTRY.register("explosion", () -> new TNTeaEffect());
+    public static final DeferredHolder<MobEffect, MobEffect> BLOOM = REGISTRY.register("bloom", () -> new BloomEffect());
 }

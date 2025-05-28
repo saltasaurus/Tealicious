@@ -1,5 +1,6 @@
 package com.tealicious;
 
+import com.tealicious.item.HerbalTeaItem;
 import com.tealicious.item.TeaItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -26,6 +27,14 @@ public class Items {
     public static final DeferredItem<Item> BASIC_TEA = REGISTRY.register(
             "tea",
             (key) -> new TeaItem(
+                    new Item.Properties()
+                            .setId(ResourceKey.create(Registries.ITEM, key))
+                            .food(new FoodProperties.Builder().alwaysEdible().build(), Consumables.DEFAULT_DRINK)
+                            .stacksTo(1)));
+
+    public static final DeferredItem<Item> BLOOM_TEA = REGISTRY.register(
+            "bloom_tea",
+            (key) -> new HerbalTeaItem(
                     new Item.Properties()
                             .setId(ResourceKey.create(Registries.ITEM, key))
                             .food(new FoodProperties.Builder().alwaysEdible().build(), Consumables.DEFAULT_DRINK)

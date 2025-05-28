@@ -34,12 +34,15 @@ public class TeaItem extends Item {
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         ItemStack itemStack = player.getItemInHand(hand);
 
-        // Check if the player can consume the tea
-        if (player.canEat(false)) {
-            return ItemUtils.startUsingInstantly(level, player, hand);
-        }
+        // Always allow drinking teas
+        return ItemUtils.startUsingInstantly(level, player, hand);
 
-        return InteractionResult.PASS;
+        // Check if the player can consume the tea
+//        if (player.canEat(true)) {
+//            return ItemUtils.startUsingInstantly(level, player, hand);
+//        }
+
+//        return InteractionResult.PASS;
     }
 
     @Override
